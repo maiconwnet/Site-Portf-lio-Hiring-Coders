@@ -98,9 +98,13 @@ header ul li {padding: 5px;}
 
     font-size: 15px;
     cursor: pointer;
-    animation: blink 1s steps(5, start) infinite;
+    
 }
 
+#animation {
+    animation: blink 1s steps(5, start) infinite;
+    transition: 300ms;
+  }
 
 @keyframes blink{
     to {
