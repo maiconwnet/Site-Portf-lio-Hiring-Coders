@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+header > div > .logo > img{
+    width: 100px; 
+    border: 1px solid white ;
+    border-radius: 30px;
+    
+}
+
+header > div > .logo {
+  
+    font-size: 60px;
+    background-image: url(../site/imgs/text.webp);
+    /* background-repeat:no-repeat; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 3px 10px 10px 2px;
+    
+}
+
+ul{
+    list-style: none;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 3px 10px 10px 2px;
+    color: #231e01;
+}
+
+a:hover {
+    font-size: 22px;color: #a09038;
+}
+
+body{
+
+    background:url(../site/imgs/pexels-mubaz-basheer-916017.jpg) no-repeat center center fixed ;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+header ul li {padding: 5px;}
+
+.container{
+    text-align: center;
+    box-shadow: 4px 8px 8px 4px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 12px ;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    background-image: url(../site/imgs/text.webp);
+    /* background-repeat:no-repeat; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.container .name h5 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#arrow{
+
+    font-size: 15px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+/* .active{
+    display: block !important;
+} */
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+    
+}
+
+/* #about{
+    display: none;
+} */
+
+#about p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #8d8451;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.form {
+    width: 40%;
+    margin: 10px auto;
+    margin-top: 40px;
+}
+.form input {
+    width: 60%;
+    border-radius: 10px 13px;
+    background-color: rgb(211, 211, 211);
+    padding: 2px;
+}
+.form input ::placeholder {
+    text-align: center;
+}
+
+.form button {
+   width: 25%; 
+   border-radius: 12px 15px;
+   /* background-color: rgb(211, 211, 211); */
+   padding: 2px;
+   background: linear-gradient(to right, #c09717 505,#9c551b 50%  );
+   background: 200% 100%;
+   background-position: right bottom;
+   cursor: pointer;
+   transition: all 300ms ease-out;
+   
+}
+
+.form button:hover{
+    background-position: left bottom;
+    background-color: rgb(211, 211, 211);
+
+}
